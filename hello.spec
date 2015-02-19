@@ -1,7 +1,7 @@
 Name            : hello
 Summary         : Hello world application
-Version         : 0.0.1
-Release         : 0.1
+Version         : 1.0
+Release         : %{?BUILD_NUMBER}
 
 Group		: Applications/File
 License		: (c) Douglas Gibbons
