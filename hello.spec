@@ -1,6 +1,6 @@
 Name            : hello
 Summary         : Hello world application
-Version         : 1.0
+Version         : 1.1
 Release         : %{?BUILD_NUMBER}
 
 Group		: Applications/File
