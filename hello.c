@@ -4,7 +4,7 @@ int main(int argc, char *argv[])
     
     if (argc > 1)
 	if (!strcmp(argv[1], "-v"))
-		printf("Version 1.1\n");
+		printf("Version 1.2\n");
 	else
 		printf("Greetings %s.\n", argv[1]);
     else
