@@ -19,4 +19,4 @@ script: |
   cp ./RPMS/x86_64/*.rpm ./RPMS/x86_64/hello-latest.rpm
   package_cloud push jasper9/staging/el/6 ./RPMS/x86_64/*.rpm
   cp ./RPMS/x86_64/*.rpm ./hello-latest.rpm
-  package_cloud push jasper9/staging/el/6 ./RPMS/x86_64/hello-latest.rpm
+  package_cloud push jasper9/staging/el/6 ./hello-latest.rpm
