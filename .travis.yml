@@ -1,6 +1,5 @@
 language: c
-compiler:
-  - gcc
-  - clang
+#compiler:
+#  - gcc
 # Change this to your needs
-# script: ./configure && make
+ script: gcc -Wall -o hello hello.c
