@@ -1,2 +1,5 @@
 language: c
 script: gcc -Wall -o hello hello.c
+script: mv hello SOURCES/.
+script: mv hello.spec SPECS/.
+script: rpmbuild --define '_topdir '`pwd` --define 'BUILD_NUMBER '$BUILD_NUMBER -ba SPECS/hello.spec
