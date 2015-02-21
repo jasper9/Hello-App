@@ -11,4 +11,4 @@ script: |
    gcc -Wall -o hello hello.c
    mv hello SOURCES/.
    mv hello.spec SPECS/.
-   rpmbuild --define '_topdir '`pwd` --define 'BUILD_NUMBER '$BUILD_NUMBER -ba SPECS/hello.spec
+   rpmbuild --define '_topdir '`pwd` --define 'BUILD_NUMBER '%{build} -ba SPECS/hello.spec
