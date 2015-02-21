@@ -1,5 +1,2 @@
 language: c
-#compiler:
-#  - gcc
-# Change this to your needs
- script: gcc -Wall -o hello hello.c
+script: gcc -Wall -o hello hello.c
