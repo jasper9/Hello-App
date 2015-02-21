@@ -7,7 +7,7 @@ before_install:
 - travis_retry sudo apt-get install -qq libgmp3-dev antlr3 libantlr3c-dev libboost-dev
   libboost-thread-dev swig2.0 libcln-dev cxxtest openjdk-7-jdk rpm devscripts doxygen
   graphviz
-  - gem install package_cloud
+- gem install package_cloud
 - travis_retry git clone -b 1.4 git://github.com/CVC4/CVC4.git cvc4
 script: |
   rm -f hello
