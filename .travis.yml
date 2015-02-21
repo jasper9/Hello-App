@@ -8,7 +8,7 @@ before_install:
 - travis_retry sudo apt-get install -qq libgmp3-dev antlr3 libantlr3c-dev libboost-dev libboost-thread-dev swig2.0 libcln-dev cxxtest openjdk-7-jdk rpm devscripts doxygen graphviz
 - travis_retry git clone -b 1.4 git://github.com/CVC4/CVC4.git cvc4
 script: |
-gcc -Wall -o hello hello.c
-mv hello SOURCES/.
-mv hello.spec SPECS/.
-rpmbuild --define '_topdir '`pwd` --define 'BUILD_NUMBER '$BUILD_NUMBER -ba SPECS/hello.spec
+   gcc -Wall -o hello hello.c
+   mv hello SOURCES/.
+   mv hello.spec SPECS/.
+   rpmbuild --define '_topdir '`pwd` --define 'BUILD_NUMBER '$BUILD_NUMBER -ba SPECS/hello.spec
