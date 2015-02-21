@@ -1,7 +1,6 @@
 language: c
 env:
 - TRAVIS_CVC4_PACKAGE=rpm
-- TRAVIS_CVC4_PACKAGE=debian
 before_install:
 - travis_retry sudo apt-add-repository -y ppa:dhart/ppa
 - travis_retry sudo apt-get update -qq
@@ -21,6 +20,7 @@ deploy:
   username: jasper9
   token:
     secure: bo/uh50LjBK68CLuKex/cOYytvoXRTx71oy/I114J0vM2EQqA3KqdekQ3rY3ZQm1V6UO8voHg/OL/lkf1T7MkPgdOZsTpg09iZVBVT1U+DRqNPwtj4e4be0oC35oJzXGwuFnMRiV62rw9chBV5sBWEelnTKQwRGoild2pMRHw4o=
+  dist: code-stream
   on:
-      all_branches: true 
+      branch: master
       local-dir: ./RPMS/x86_64/
