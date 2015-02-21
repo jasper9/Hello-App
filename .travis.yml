@@ -11,6 +11,7 @@ before_install:
 - travis_retry git clone -b 1.4 git://github.com/CVC4/CVC4.git cvc4
 script: |
   rm -f hello
+  rm -fr ./RPMS/x86_64/*
   gcc -Wall -o hello hello.c
   mv hello SOURCES/.
   mv hello.spec SPECS/.
@@ -20,4 +21,6 @@ deploy:
   username: jasper9
   token:
     secure: bo/uh50LjBK68CLuKex/cOYytvoXRTx71oy/I114J0vM2EQqA3KqdekQ3rY3ZQm1V6UO8voHg/OL/lkf1T7MkPgdOZsTpg09iZVBVT1U+DRqNPwtj4e4be0oC35oJzXGwuFnMRiV62rw9chBV5sBWEelnTKQwRGoild2pMRHw4o=
-  branch: code-stream
+  on:
+      all_branches: true 
+      local-dir: ./RPMS/x86_64/
