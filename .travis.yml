@@ -17,5 +17,3 @@ script: |
   mv hello.spec SPECS/.
   rpmbuild --define '_topdir '`pwd` --define 'BUILD_NUMBER '$TRAVIS_BUILD_NUMBER -ba SPECS/hello.spec
   package_cloud push jasper9/staging/el/6 ./RPMS/x86_64/*.rpm
-  mv ./RPMS/x86_64/*.rpm ./hello-latest.rpm
-  package_cloud push jasper9/staging/el/6 ./hello-latest.rpm
